@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = current_user.posts.build(params.require(:post).permit(:title, :body))
   end
 
   def new
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
         flash[:error] = "There was an error saving the post. Please try again."
         render :new
       end
-   end
+  end
   
   def edit
      @post = Post.find(params[:id])
