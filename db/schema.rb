@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150130033602) do
+ActiveRecord::Schema.define(version: 20150201171820) do
 
   create_table "comments", force: true do |t|
     t.text     "body"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20150130033602) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.string   "name"
   end
 
 end
