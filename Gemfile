@@ -27,6 +27,8 @@ gem 'jquery-rails'
 gem 'faker'
 # Use Devise for authentication
 gem 'devise'
+# Redcarpet for Markdown support
+gem 'redcarpet'
 # Pundit for User Roles
 gem 'pundit'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
