@@ -27,6 +27,8 @@ gem 'jquery-rails'
 gem 'faker'
 # Figaro to manage credential variables
 gem 'figaro'
+# wil_paginate for pagination
+gem 'will_paginate', '~> 3.0.7'
 # Use Devise for authentication
 gem 'devise'
 # Redcarpet for Markdown support

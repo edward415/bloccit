@@ -17,4 +17,3 @@ development:
     AWS_BUCKET: edbloccit-development
 production:
     AWS_BUCKET: edbloccit-production
-stripe_api_key: "sk_live_dSqzdUq80sw9GWmuoI0qJ9rL"
