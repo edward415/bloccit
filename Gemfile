@@ -25,10 +25,18 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 # Use faker to create test entries in db
 gem 'faker'
+# Figaro to manage credential variables
+gem 'figaro'
 # Use Devise for authentication
 gem 'devise'
 # Redcarpet for Markdown support
 gem 'redcarpet'
+# carrierwave for image upload
+gem 'carrierwave'
+# minimagick for image tools
+gem 'mini_magick'
+# use fog to integrate
+gem 'fog'
 # Pundit for User Roles
 gem 'pundit'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
