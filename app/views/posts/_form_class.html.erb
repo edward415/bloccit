@@ -1,13 +1,19 @@
     <%= form_for [@topic, @post] do |f| %>
-       <div class=<% form_class_tag(post.errors) %>>
+        <div class=<% form_class_tag(post.errors) %>>
          <%= f.label :title %>
          <%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
-       </div>
-       <div class=<% form_class_tag(post.errors) %>>
+        </div>
+        <div class=<% form_class_tag(post.errors) %>>
          <%= f.label :body %>
          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter post body" %>
-       </div>
-       <div class=<% form_class_tag(post.errors) %>>
+        </div>
+        <div class=<% form_class_tag(post.errors) %>>
+         <%= f.label :picture %>
+         <%= f.file_field :picture%>
+         <%= f.hidden_field :picture_cache %>
+         </div>
+        <div class=<% form_class_tag(post.errors) %>>
          <%= f.submit "Save", class: 'btn btn-success' %>
-       </div>
+        </div>
+
      <% end %>
