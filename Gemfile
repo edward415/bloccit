@@ -35,6 +35,8 @@ gem 'devise'
 gem 'redcarpet'
 # carrierwave for image upload
 gem 'carrierwave'
+# cloudinary for storage
+gem 'cloudinary'
 # minimagick for image tools
 gem 'mini_magick'
 # use fog to integrate

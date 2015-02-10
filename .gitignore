@@ -20,3 +20,9 @@
 
 # Ignore application configuration
 /config/application.yml
+
+#ignore cloudinary config
+/config/cloudinary.yml
+
+#ignore carrierwave temp files
+public/uploads
