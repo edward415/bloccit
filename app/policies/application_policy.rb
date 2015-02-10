@@ -33,7 +33,11 @@ class ApplicationPolicy
   def destroy?
     update?
   end
-
+  
+  def can_moderate?
+    user.present? && (record.user == user || user.admin? || user.moderator?)
+  end
+  
   def scope
     record.class
   end
