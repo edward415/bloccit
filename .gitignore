@@ -26,3 +26,6 @@
 
 #ignore carrierwave temp files
 public/uploads
+
+#ignore spring files
+/spring
