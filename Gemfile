@@ -43,6 +43,10 @@ gem 'mini_magick'
 gem 'fog'
 # Pundit for User Roles
 gem 'pundit'
+# Rspec for tdd
+group :test do
+  gem 'rspec-rails', '~> 3.1.0'
+end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
