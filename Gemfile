@@ -11,6 +11,8 @@ end
 
 group :development do
   gem 'sqlite3'
+  # Better errors for debug
+  gem 'better_errors'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -43,8 +45,8 @@ gem 'mini_magick'
 gem 'fog'
 # Pundit for User Roles
 gem 'pundit'
-# Rspec for tdd
 group :test do
+# Rspec for tdd
   gem 'rspec-rails', '~> 3.1.0'
 end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
