@@ -49,6 +49,7 @@ group :test do
 # Rspec for tdd
   gem 'rspec-rails', '~> 3.1.0'
   gem 'capybara'
+  gem 'factory_girl'
 end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

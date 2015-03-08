@@ -18,4 +18,11 @@ module TestFactories
       user.save
       user
     end
+    
+    FactoryGirl.define do
+      factory :user do
+        email 'admin@admin.com'
+        password 'helloworld'
+      end
+    end
 end
