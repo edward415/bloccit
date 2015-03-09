@@ -6,6 +6,7 @@ class Comment < ActiveRecord::Base
   validates :user, presence: true
   
   after_create :send_favorite_emails
+  default_scope { order('updated_at DESC') }
   
   private
   
@@ -17,7 +18,7 @@ class Comment < ActiveRecord::Base
     end
   end
   
-  def should_receive_update_for(favorite)
+  def should_receive_update_for?(favorite)
     user_id != favorite.user_id && favorite.user.email_favorites?
   end
 

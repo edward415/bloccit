@@ -32,13 +32,17 @@
   
   <div class="col-md-8">
     <h3><%= @comments.count %> Comment</h3>
+    <div class='js-comments'>
     <%= render partial: 'comments/comment', collection: @comments %>
     </div>
+  </div>
   
   <% if user_signed_in? %>
   <div class="col-md-8">
     <h4>New Comment</h4>
+    <div class='new-comment'>
     <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+    </div>
   </div>
   <% end %>
 
