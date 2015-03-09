@@ -47,6 +47,8 @@ gem 'fog'
 gem 'pundit'
 # newrelic for monitering performance
 gem 'newrelic_rpm'
+# puma webserver
+gem 'puma'
 group :test do
 # Rspec for tdd
   gem 'rspec-rails', '~> 3.1.0'
