@@ -5,12 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 group :production do
-  gem 'puma'
+  gem 'pg'
   gem 'rails_12factor'
 end
 
 group :development do
-  gem 'puma'
+  gem 'sqlite3'
   # Better errors for debug
   gem 'better_errors'
 end
