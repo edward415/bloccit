@@ -45,11 +45,14 @@ gem 'mini_magick'
 gem 'fog'
 # Pundit for User Roles
 gem 'pundit'
+# newrelic for monitering performance
+gem 'newrelic_rpm'
 group :test do
 # Rspec for tdd
   gem 'rspec-rails', '~> 3.1.0'
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'factory_girl', '~> 4.0'
+  gem 'database_cleaner'
 end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

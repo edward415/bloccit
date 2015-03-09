@@ -60,6 +60,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    database_cleaner (1.4.0)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -178,6 +179,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     netrc (0.10.2)
+    newrelic_rpm (3.10.0.279)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -282,14 +284,16 @@ DEPENDENCIES
   carrierwave
   cloudinary
   coffee-rails (~> 4.0.0)
+  database_cleaner
   devise
-  factory_girl
+  factory_girl (~> 4.0)
   faker
   figaro
   fog
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
+  newrelic_rpm
   pg
   pundit
   rails (= 4.1.0)
